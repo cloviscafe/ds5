@@ -17,8 +17,7 @@
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
     (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '24142790448722862');
-    fbq('track', 'PageView',
-{ test_event_code: 'TEST39116' });
+    fbq('track', 'PageView',);
     /* --- MODO DE TESTE (opcional):
        fbq('track', 'PageView', { test_event_code: 'TEST39116' });
        Depois remova a linha acima de teste e volte para a padrão.
@@ -151,8 +150,7 @@
             fbq('track', 'Contact', {
               channel: 'whatsapp',
               href: el && el.href ? el.href : null,
-              location: window.location.pathname,
-test_event_code: 'TEST39116'
+              location: window.location.pathname
               /* --- MODO DE TESTE (opcional):
                  ,test_event_code: 'TEST39116'
               --- */
