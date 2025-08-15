@@ -2,119 +2,66 @@
 <html lang="pt-br">
 <head>
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PGQWLX9J');</script>
-<!-- End Google Tag Manager -->
- <!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-  n.push=n; n.loaded=!0; n.version='2.0'; n.queue=[]; t=b.createElement(e); t.async=!0;
-  t.src=v; s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)
-  }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', 'YOUR_PIXEL_ID');
-  fbq('track', 'PageView');
-</script>
-<noscript>
-  <img height="1" width="1" style="display:none"
-       src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PGQWLX9J');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '24142790448722862');
+    fbq('track', 'PageView',
+{ test_event_code: 'TEST39116' });
+    /* --- MODO DE TESTE (opcional):
+       fbq('track', 'PageView', { test_event_code: 'TEST39116' });
+       Depois remova a linha acima de teste e volte para a padrão.
+    --- */
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=24142790448722862&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DS Damanda - Sublimação e Personalização</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f5f5;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(to left,#009FFD,#2A2A72); /* cor WhatsApp */
-      padding: 05px 08px;
-      color: white;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    section {
-      padding: 05px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .descricao {
-      background: white;
-      padding: 10px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .produtos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 08px;
-    }
-    .produto {
-      background: white;
-      padding: 08px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .produto img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-    .btn-whatsapp {
-      display: block;
-      background: #25d366;
-      color: white;
-      text-decoration: none;
-      padding: 15px;
-      font-size: 18px;
-      border-radius: 8px;
-      margin: 30px auto;
-      width: 80%;
-      text-align: center;
-      transition: background 0.3s ease;
-    }
-    .btn-whatsapp:hover {
-      background: #1ebe57;
-    }
-    footer {
-      text-align: center;
-      margin-top: 30px;
-      padding: 15px;
-      font-size: 14px;
-      color: #777;
-    }
+    body{font-family:Arial,sans-serif;margin:0;padding:0;background:#f5f5f5;color:#333}
+    header{background:linear-gradient(to left,#009FFD,#2A2A72);padding:5px 8px;color:#fff;text-align:center}
+    header h1{margin:0;font-size:2rem}
+    section{padding:5px;max-width:900px;margin:auto}
+    .descricao{background:#fff;padding:10px;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,.1);text-align:center;margin-bottom:20px}
+    .produtos{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:8px}
+    .produto{background:#fff;padding:8px;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,.1);text-align:center}
+    .produto img{max-width:100%;border-radius:8px;margin-bottom:10px}
+    .btn-whatsapp{display:block;background:#25d366;color:#fff;text-decoration:none;padding:15px;font-size:18px;border-radius:8px;margin:30px auto;width:80%;text-align:center;transition:background .3s}
+    .btn-whatsapp:hover{background:#1ebe57}
+    footer{text-align:center;margin-top:30px;padding:15px;font-size:14px;color:#777}
   </style>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGQWLX9J"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGQWLX9J"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <header>
-    <h1><img src="imagens/logo22.png"
-alt="logo DS Damanda"
-Style="height: 10px;">
- DS Damanda</h1>
+    <h1>
+      <img src="imagens/logo22.png" alt="logo DS Damanda" style="height: 10px;">
+      DS Damanda
+    </h1>
     <p>Sublimação e Personalização Exclusiva</p>
   </header>
 
   <section>
-    <!-- DESCRIÇÃO -->
     <div class="descricao">
       <h2>Transformamos ideias em produtos únicos!</h2>
       <p>
@@ -123,10 +70,8 @@ Style="height: 10px;">
       </p>
     </div>
 
-    <!-- LISTA DE PRODUTOS -->
     <h2 style="text-align:center; margin-bottom:20px;">✅ Produtos que personalizamos</h2>
     <div class="produtos">
-
       <div class="produto">
         <img src="imagens/camisa1.jpeg" alt="Camisetas">
         <h3>👕 Camisetas</h3>
@@ -176,65 +121,71 @@ Style="height: 10px;">
       </div>
 
       <div class="produto">
+        <!-- se renomear o arquivo para evitar espaço/acento, use imagem-crianca.jpeg -->
         <img src="imagens/imagem criança.jpeg" alt="MDF">
         <h3>🚪 MDF</h3>
         <p>Peças personalizadas com acabamento perfeito.</p>
       </div>
-
     </div>
 
     <!-- BOTÃO DO WHATSAPP -->
     <a id="cta-whatsapp"
-    class="btn-whatsapp" href="https://wa.me/5513981852670?text=Olá,+quero+fazer+um+pedido!" target="_blank">
+       class="btn-whatsapp"
+       href="https://wa.me/5513981852670?text=Ol%C3%A1,%20quero%20fazer%20um%20pedido!"
+       target="_blank" rel="noopener">
       ✅ Clique aqui e faça seu pedido pelo WhatsApp
     </a>
-
   </section>
 
   <footer>
     © 2025 DS Damanda - Sublimação e Personalização. Todos os direitos reservados.
   </footer>
+
+  <!-- Evento Contact (Meta) -->
   <script>
-  // dispara evento Contact no clique do WhatsApp
-  (function () {
-    function trackWhatsAppClick(e) {
-      try {
-        var el = e.currentTarget;
-        fbq && fbq('track', 'Contact', {
-          channel: 'whatsapp',
-          href: el && el.href ? el.href : null,
-          location: window.location.pathname
-        });
-      } catch (err) {}
-    }
+    (function () {
+      function trackWhatsAppClick(e) {
+        try {
+          var el = e.currentTarget;
+          if (typeof fbq === 'function') {
+            fbq('track', 'Contact', {
+              channel: 'whatsapp',
+              href: el && el.href ? el.href : null,
+              location: window.location.pathname,
+test_event_code: 'TEST39116'
+              /* --- MODO DE TESTE (opcional):
+                 ,test_event_code: 'TEST39116'
+              --- */
+            });
+          }
+        } catch (err) {}
+      }
 
-    document.addEventListener('DOMContentLoaded', function () {
-      var btn = document.getElementById('cta-whatsapp');
-      if (btn) btn.addEventListener('click', trackWhatsAppClick);
+      document.addEventListener('DOMContentLoaded', function () {
+        var btn = document.getElementById('cta-whatsapp');
+        if (btn) btn.addEventListener('click', trackWhatsAppClick);
 
-      // fallback se existir outro link de WhatsApp na página
-      var links = document.querySelectorAll('a[href*="wa.me/"], a[href*="api.whatsapp.com/send"]');
-      links.forEach(function(a){
-        if (a !== btn) a.addEventListener('click', trackWhatsAppClick);
+        // fallback: qualquer link de WhatsApp
+        var links = document.querySelectorAll('a[href*="wa.me/"], a[href*="api.whatsapp.com/send"]');
+        links.forEach(function(a){ if (!btn || a !== btn) a.addEventListener('click', trackWhatsAppClick); });
       });
-    });
-  })();
+    })();
   </script>
+
+  <!-- GA via GTM: envia sinal para dataLayer -->
   <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var targets = document.querySelectorAll('#cta-whatsapp, a[href*="wa.me/"], a[href*="api.whatsapp.com/send"]');
-    targets.forEach(function(a){
-      a.addEventListener('click', function(){
-        if (typeof gtag === 'function') {
-          gtag('event', 'click_whatsapp', {
-            event_category: 'engagement',
-            event_label: a.href,
-            value: 1
+    document.addEventListener('DOMContentLoaded', function () {
+      var targets = document.querySelectorAll('#cta-whatsapp, a[href*="wa.me/"], a[href*="api.whatsapp.com/send"]');
+      targets.forEach(function(a){
+        a.addEventListener('click', function(){
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'click_whatsapp',
+            link_url: a.href
           });
-        }
+        });
       });
     });
-  });
-</script>
+  </script>
 </body>
 </html>
