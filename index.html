@@ -8,6 +8,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PGQWLX9J');</script>
 <!-- End Google Tag Manager -->
+ <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n; n.loaded=!0; n.version='2.0'; n.queue=[]; t=b.createElement(e); t.async=!0;
+  t.src=v; s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)
+  }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'YOUR_PIXEL_ID');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DS Damanda - Sublimação e Personalização</title>
@@ -93,7 +108,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <header>
     <h1><img src="imagens/logo22.png"
 alt="logo DS Damanda"
-Style="heigth: 10px;">
+Style="height: 10px;">
  DS Damanda</h1>
     <p>Sublimação e Personalização Exclusiva</p>
   </header>
@@ -169,7 +184,8 @@ Style="heigth: 10px;">
     </div>
 
     <!-- BOTÃO DO WHATSAPP -->
-    <a class="btn-whatsapp" href="https://wa.me/5513981852670?text=Olá,+quero+fazer+um+pedido!" target="_blank">
+    <a id="cta-whatsapp"
+    class="btn-whatsapp" href="https://wa.me/5513981852670?text=Olá,+quero+fazer+um+pedido!" target="_blank">
       ✅ Clique aqui e faça seu pedido pelo WhatsApp
     </a>
 
@@ -178,6 +194,47 @@ Style="heigth: 10px;">
   <footer>
     © 2025 DS Damanda - Sublimação e Personalização. Todos os direitos reservados.
   </footer>
+  <script>
+  // dispara evento Contact no clique do WhatsApp
+  (function () {
+    function trackWhatsAppClick(e) {
+      try {
+        var el = e.currentTarget;
+        fbq && fbq('track', 'Contact', {
+          channel: 'whatsapp',
+          href: el && el.href ? el.href : null,
+          location: window.location.pathname
+        });
+      } catch (err) {}
+    }
 
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn = document.getElementById('cta-whatsapp');
+      if (btn) btn.addEventListener('click', trackWhatsAppClick);
+
+      // fallback se existir outro link de WhatsApp na página
+      var links = document.querySelectorAll('a[href*="wa.me/"], a[href*="api.whatsapp.com/send"]');
+      links.forEach(function(a){
+        if (a !== btn) a.addEventListener('click', trackWhatsAppClick);
+      });
+    });
+  })();
+  </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var targets = document.querySelectorAll('#cta-whatsapp, a[href*="wa.me/"], a[href*="api.whatsapp.com/send"]');
+    targets.forEach(function(a){
+      a.addEventListener('click', function(){
+        if (typeof gtag === 'function') {
+          gtag('event', 'click_whatsapp', {
+            event_category: 'engagement',
+            event_label: a.href,
+            value: 1
+          });
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
